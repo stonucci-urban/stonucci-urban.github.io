@@ -1,0 +1,13 @@
+@import "{{ site.theme }}"; 
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
