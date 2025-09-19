@@ -205,10 +205,17 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-/* Placeholder styling */
-.project.drone-reels {
-  border: 2px dashed #bbb;
-  background: #fafafa;
+.drone-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.thumb-link:hover .drone-thumb {
+  transform: scale(1.02); /* subtle zoom effect on hover */
 }
 
 /* Optional: nicer headings spacing inside cards */
