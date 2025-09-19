@@ -10,40 +10,42 @@ html, body {
   padding: 0;
 }
 
+/* Global text */
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  margin: 0 0 0.5em;
+  line-height: 1.2;
 }
 
-.wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 16px;
-}
-
+/* Header block */
 .site-header {
   text-align: center;
   margin-bottom: 40px;
 }
 
 .site-header h1 {
-  margin: 0;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 700; /* bold Montserrat */
 }
 
 .site-header .tagline {
   margin-top: 8px;
   font-size: 1.2rem;
-  font-weight: 400;
-  color: #555;         /* softer than the main heading */
-  font-style: italic;  /* gives it a “tagline” feel */
+  font-weight: 400;  /* Inter, lighter */
+  color: #555;
+  font-style: italic;
+}
 
 .about {
   margin: 40px 0;
