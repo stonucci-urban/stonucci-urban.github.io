@@ -1,9 +1,5 @@
 @import "{{ site.theme }}"; 
 
-* {
-  box-sizing: border-box;
-}
-
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
@@ -24,8 +20,3 @@
   display: table;
   clear: both;
 }
-
-.svg {
-        width: 100%;
-        height: 100%;
-    }
