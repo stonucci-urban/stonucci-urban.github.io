@@ -168,6 +168,13 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--accent);
 }
 
+.project-description {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #555;          /* softer than body text */
+  line-height: 1.5;
+}
+
 /* Responsive 16:9 media wrapper */
 .media {
   position: relative;
