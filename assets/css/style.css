@@ -74,3 +74,58 @@ html, body {
   line-height: 1.6;
   margin: 0 0 1rem;
 }
+
+/* Projects section */
+.projects {
+  margin-top: 32px;
+  display: grid;       /* stacks as rows */
+  gap: 24px;
+}
+
+/* Card */
+.project {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+/* Responsive 16:9 media wrapper */
+.media {
+  position: relative;
+  width: 100%;
+}
+
+.media-16x9 {
+  aspect-ratio: 16 / 9;              /* modern, simple */
+}
+
+.media iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Linked image thumbnail */
+.thumb-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Placeholder styling */
+.project.placeholder {
+  border: 2px dashed #bbb;
+  background: #fafafa;
+}
+
+/* Optional: nicer headings spacing inside cards */
+.project h2 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
