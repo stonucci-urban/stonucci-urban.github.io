@@ -37,6 +37,44 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+
+.about {
+  margin: 40px 0;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-photo {
+  flex: 1;
+  max-width: 180px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;   /* circle crop */
+  border: 2px solid #ddd;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 720px) {
+  .about-row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-photo {
+    max-width: 140px;
+  }
+}
+
 /* Flexbox two-column row */
 .row {
   display: flex;
