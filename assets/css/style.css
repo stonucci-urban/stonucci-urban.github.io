@@ -1,24 +1,76 @@
+/* Layout shell */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* Create two unequal columns that floats next to each other */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.site-header {
+  margin-bottom: 24px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Flexbox two-column row */
 .row {
   display: flex;
+  gap: 24px;             /* space between columns */
+  align-items: flex-start;
 }
+
+/* Columns */
 .column {
-  float: none; /* override float */
+  display: flex;
+  flex-direction: column;
 }
 
-
+/* Left: 25% / Right: 75% on larger viewports */
 .left {
-  width: 25%;
+  flex: 0 0 25%;
+  min-width: 180px;      /* keeps the avatar column from getting too tiny */
 }
 
 .right {
-  width: 75%;
+  flex: 1 1 0%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Media: stack on small screens */
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+/* Image styles */
+.avatar {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Optional typography polish */
+.section p {
+  line-height: 1.6;
+  margin: 0 0 1rem;
 }
