@@ -4,20 +4,20 @@
   box-sizing: border-box;
 }
 
-.column {
+.mycolumn {
   float: left;
 }
 
-.left {
+.myleft {
   width: 25%;
 }
 
-.right {
+.myright {
   width: 75%;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.myrow:after {
   content: "";
   display: table;
   clear: both;
