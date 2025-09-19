@@ -10,6 +10,21 @@ html, body {
   padding: 0;
 }
 
+/* Wrapper container to center content */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Make About + Projects honor the wrapper too */
+.about,
+.projects {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  padding: 0 16px;
+}
+
 /* Global text */
 body {
   font-family: 'Inter', sans-serif;
