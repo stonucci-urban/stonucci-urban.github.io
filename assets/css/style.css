@@ -217,15 +217,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-/* inner layer that scales */
-.video-preview {
-  position: absolute;
-  inset: 0;
-  will-change: transform;
-  transform: translateZ(0) scale3d(1,1,1);
-  transition: transform 0.6s cubic-bezier(0.25,0.8,0.25,1);
-}
-
 /* Make the link a block-level wrapper */
 .thumb-link { display: block; }
 
@@ -259,10 +250,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Optional polish */
 .thumb-link:hover .play-overlay { opacity: 1; }
-
-@media (prefers-reduced-motion: reduce) {
-  .video-preview { transition: none; }
-}
 
 /* Optional: nicer headings spacing inside cards */
 .project h2 {
