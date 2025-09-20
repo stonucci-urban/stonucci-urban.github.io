@@ -249,12 +249,12 @@ h1, h2, h3, h4, h5, h6 {
 .thumb-link:hover .play-overlay {
   opacity: 1; /* brighten icon on hover */
 }
-
+/*
 @media (prefers-reduced-motion: reduce) {
   .video-preview { transition: none; }
   .thumb-link:hover .video-preview { transform: none; }
 }
-
+*/
 /* Optional: nicer headings spacing inside cards */
 .project h2 {
   margin: 0 0 12px;
