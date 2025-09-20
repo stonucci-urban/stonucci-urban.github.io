@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1); /* smoother */
+  transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1); /* smoother */
   will-change: transform;
 }
 
