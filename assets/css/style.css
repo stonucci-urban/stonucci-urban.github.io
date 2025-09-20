@@ -205,61 +205,68 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-/* Video fills the box without affecting layout */
+
+/* VIDEO REEL CONTENT */
+
+/* Static outer frame: holds size & rounding, never scales */
+.video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* locks height, prevents reflow */
+  border-radius: 8px;
+  overflow: hidden;        /* keep corners crisp; no shimmering edges */
+}
+
+/* Inner layer: absolutely fills the frame and is the ONLY thing that scales */
+.video-preview {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  transform: translateZ(0) scale3d(1,1,1);
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+  contain: paint;          /* isolates repaint to this box (reduces jitter) */
+}
+
+/* Scale THIS, not the video itself */
+.thumb-link:hover .video-preview {
+  transform: translateZ(0) scale3d(1.03, 1.03, 1);
+}
+
+/* Video fills the box; never changes layout */
 .drone-thumb {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-  transform-origin: 50% 50%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.video-preview {
-  position: relative;
-  display: block;
-  aspect-ratio: 16 / 9;         /* lock the height */
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.9s cubic-bezier(0.25,0.8,0.25,1);
-  will-change: transform;
-  transform: translateZ(0);      /* GPU compositing */
-}
-
-/* Play icon overlay */
+/* Overlay centered above the video */
 .play-overlay {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center; /* centers icon */
-  z-index: 2;
+  inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1;
   pointer-events: none;
-  opacity: 0.7;
+  opacity: 0.85;
   transition: opacity 0.45s ease;
 }
 
 .play-overlay svg {
-  /* responsive but capped; adjust to taste */
   width: clamp(56px, 7vw, 88px);
   height: auto;
   display: block;
 }
 
-/* apply hover to the container, not the video */
-.thumb-link:hover .video-preview {
-  transform: translateZ(0) scale(1.03);
-}
+/* Optional polish */
+.thumb-link:hover .play-overlay { opacity: 1; }
 
-.thumb-link:hover .play-overlay {
-  opacity: 1; /* brighten icon on hover */
-}
-/*
 @media (prefers-reduced-motion: reduce) {
   .video-preview { transition: none; }
-  .thumb-link:hover .video-preview { transform: none; }
 }
-*/
+
 /* Optional: nicer headings spacing inside cards */
 .project h2 {
   margin: 0 0 12px;
