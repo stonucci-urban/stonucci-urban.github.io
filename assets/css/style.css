@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   margin: 40px 0;
+  background-color: #00674F;
 }
 
 .about-row {
@@ -204,52 +205,6 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   border-radius: 8px;
 }
-
-
-/* VIDEO REEL CONTENT */
-
-/* static outer frame */
-.video-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* Make the link a block-level wrapper */
-.thumb-link { display: block; }
-
-/* Video fills the box; never changes layout */
-.drone-thumb {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-/* Overlay centered above the video */
-.play-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex; align-items: center; justify-content: center;
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0.85;
-  transition: opacity 0.45s ease;
-}
-
-.play-overlay svg {
-  width: clamp(56px, 7vw, 88px);
-  height: auto;
-  display: block;
-}
-
-/* Optional polish */
-.thumb-link:hover .play-overlay { opacity: 1; }
 
 /* Optional: nicer headings spacing inside cards */
 .project h2 {
