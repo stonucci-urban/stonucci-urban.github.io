@@ -205,23 +205,27 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
+/* Video fills the box without affecting layout */
 .drone-thumb {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  position: relative;
-  z-index: 1;
+  display: block;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
 }
 
 .video-preview {
   position: relative;
   display: block;
+  aspect-ratio: 16 / 9;         /* lock the height */
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 0.9s cubic-bezier(0.25,0.8,0.25,1);
   will-change: transform;
-  transform: translateZ(0); /* nudge GPU compositing */
+  transform: translateZ(0);      /* GPU compositing */
 }
 
 /* Play icon overlay */
@@ -244,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* apply hover to the container, not the video */
 .thumb-link:hover .video-preview {
-  transform: scale(1.03);
+  transform: translateZ(0) scale(1.03);
 }
 
 .thumb-link:hover .play-overlay {
