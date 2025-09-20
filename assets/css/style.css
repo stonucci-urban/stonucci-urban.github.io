@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.45s cubic-bezier(0.25, 0.8, 0.25, 1); /* smoother */
   will-change: transform;
 }
 
@@ -230,8 +230,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex; align-items: center; justify-content: center; /* centers icon */
   z-index: 2;
   pointer-events: none;
-  opacity: 0.85;
-  transition: opacity 0.2s ease;
+  opacity: 0.7;
+  transition: opacity 0.45s ease;
 }
 
 .play-overlay svg {
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .thumb-link:hover .drone-thumb {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .thumb-link:hover .play-overlay {
