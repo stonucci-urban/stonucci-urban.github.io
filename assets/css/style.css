@@ -229,11 +229,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Make the link a block-level wrapper */
 .thumb-link { display: block; }
 
-/* Trigger scaling if hover lands on the link (in addition to .video-frame) */
-.thumb-link:hover .video-preview,
-.video-frame:hover .video-preview {
-  transform: translateZ(0) scale3d(1.03, 1.03, 1) !important;
-}
 /* Video fills the box; never changes layout */
 .drone-thumb {
   position: absolute;
