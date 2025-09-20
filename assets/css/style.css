@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #00674F;
   border-radius: 10px;
   color: white;
-  box-shadow: 10px 10px;
+  box-shadow: 25px 25px black;
 }
 
 .about-row {
