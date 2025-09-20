@@ -64,11 +64,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   margin: 40px 0;
-  background-color: #00674F;
+  background-color: #77c79b;
   border-radius: 10px;
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  border-color: var(--accent);
+  border-color: #5dd9c1;
 }
 
 .about-row {
