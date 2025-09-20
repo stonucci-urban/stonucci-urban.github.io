@@ -209,40 +209,35 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
   object-fit: cover;
-  z-index: 1;
   position: relative;
-  transition: transform 0.3s ease;
+  z-index: 1;
 }
 
 .video-preview {
   position: relative;
-  display: block; /* fill the card width */
-  border-radius: 8px;    /* match your media rounding */
-  overflow: hidden;      /* keep overlay circle within corners */
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 /* Play icon overlay */
 .play-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  display: flex;               /* flexbox for perfect centering */
-  align-items: center;         /* vertical center */
-  justify-content: center;     /* horizontal center */
-
+  top: 0; left: 0; width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center; /* centers icon */
   z-index: 2;
   pointer-events: none;
   opacity: 0.85;
   transition: opacity 0.2s ease;
+}
 
 .play-overlay svg {
-  width: 64px;
-  height: 64px;
+  /* responsive but capped; adjust to taste */
+  width: clamp(56px, 7vw, 88px);
+  height: auto;
   display: block;
 }
 
@@ -253,6 +248,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .thumb-link:hover .play-overlay {
   opacity: 1; /* brighten icon on hover */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .video-preview { transition: none; }
+  .thumb-link:hover .video-preview { transform: none; }
 }
 
 /* Optional: nicer headings spacing inside cards */
