@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   top: -12px;      /* sit above main body */
-  left: 10px;
+  left: 0;
   width: 100%;
   height: 24px;    /* bar height */
   background: #e6d7aa; /* slightly darker manila */
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: -12px;   /* tab height */
   left: 0px;   /* tab inset */
-  width: 250px; /* tab width */
+  width: 275px; /* tab width */
   height: 24px; /* tab height */
   background: #f8f0d9;
   border: 1px solid #d4c9a1;
