@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   top: -12px;      /* sit above main body */
-  left: 1px;
+  left: 10px;
   width: 100%;
   height: 24px;    /* bar height */
   background: #e6d7aa; /* slightly darker manila */
