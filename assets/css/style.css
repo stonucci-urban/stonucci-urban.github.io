@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -12px;   /* tab height */
   left: 16px;   /* tab inset */
   width: 120px; /* tab width */
-  height: 24px; /* tab height */
+  height: 12px; /* tab height */
   background: #f8f0d9;
   border: 1px solid #d4c9a1;
   border-bottom: none;
