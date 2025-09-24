@@ -189,8 +189,8 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   top: -12px;   /* tab height */
-  left: 12px;   /* tab inset */
-  width: 120px; /* tab width */
+  left: 0px;   /* tab inset */
+  width: 200px; /* tab width */
   height: 24px; /* tab height */
   background: #f8f0d9;
   border: 1px solid #d4c9a1;
