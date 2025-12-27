@@ -3237,7 +3237,7 @@ img.u-pull-left {
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
     color            : white;
-	text-shadow      : 2px 2px #ff0000;
+	text-shadow      : 2px 2px rgb(80, 97, 97);
 }
 
 /* --------------------------------------------------------------------
@@ -3251,7 +3251,6 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-	background-blend-mode: overlay;
     position            : relative;
 }
 
