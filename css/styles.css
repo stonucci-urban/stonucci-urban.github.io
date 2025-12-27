@@ -3245,7 +3245,8 @@ img.u-pull-left {
 .s-intro__bg {
     aspect-ratio        : 1/.5;
     width               : 100%;
-	background-image    : linear-gradient(to bottom, rgba(207, 230, 232, 0) 0%, transparent 50%), url(../images/intro-bg.jpg);
+	background-color    : #cfe6e8;
+	background-image    : url(../images/intro-bg.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
