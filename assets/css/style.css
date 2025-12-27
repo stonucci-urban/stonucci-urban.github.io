@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 1. The Container (The "Window") */
   .pdf-thumb-container {
-    width: 300px;           /* Fixed width for your resume layout */
+    max-width: 1000px;           /* Fixed width for your resume layout */
     height: 400px;          /* Fixed height */
     overflow: hidden;       /* Hides the rest of the wide spread */
     border: 1px solid #ddd;
