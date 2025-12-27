@@ -3248,7 +3248,7 @@ img.u-pull-left {
     background-color    : var(--color-gray-4);
     background-repeat   : no-repeat;
     background-position : center;
-    background-size     : cover;
+    background-size     : auto;
     position            : relative;
 }
 
