@@ -3261,7 +3261,7 @@ img.u-pull-left {
     right          : 0;
     bottom         : 0;
     width          : 100%;
-    height         : 100%;
+    height         : 50%;
     background     : linear-gradient(180deg, black 5%, rgba(0, 0, 0, 0) 100%);
     pointer-events : none;
     opacity        : .12;
