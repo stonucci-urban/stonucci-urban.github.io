@@ -3667,6 +3667,7 @@ img.u-pull-left {
     display  : block;
     position : relative;
     overflow : hidden;
+	border-radius : 15px;
 }
 
 .folio-item__thumb a::before {
@@ -3720,7 +3721,6 @@ img.u-pull-left {
  */
 .folio-item__info {
     padding : var(--vspace-0_75) 0 var(--vspace-0_5);
-	border-radius : 15px;
 }
 
 .folio-item__title {
