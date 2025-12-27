@@ -3251,6 +3251,7 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
+	border-radius		: 0px 0px 15px 15px;
     position            : relative;
 }
 
@@ -3336,7 +3337,7 @@ img.u-pull-left {
     --timeline-top-adjust          : calc(var(--subtitle-line-height) / 2);
     --timeline-vertical-border-pos : 8px;
 
-    padding-top                    : var(--vspace-5);
+    padding-top                    : var(--vspace-3);
     padding-bottom                 : var(--vspace-3);
 }
 
