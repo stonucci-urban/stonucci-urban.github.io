@@ -3246,7 +3246,7 @@ img.u-pull-left {
     aspect-ratio        : 1/.5;
     width               : 100%;
     background-color    : var(--color-gray-4);
-	background-image    : linear-gradient(to bottom, white 0%, transparent 100%), url(../images/intro-bg.jpg);
+	background-image    : linear-gradient(to bottom, #cfe6e8 0%, transparent 50%), url(../images/intro-bg.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
