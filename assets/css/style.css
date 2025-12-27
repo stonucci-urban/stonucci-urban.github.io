@@ -242,6 +242,31 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
+/* 1. The Container (The "Window") */
+  .pdf-thumb-container {
+    width: 300px;           /* Fixed width for your resume layout */
+    height: 400px;          /* Fixed height */
+    overflow: hidden;       /* Hides the rest of the wide spread */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+/* 2. The Wide Thumbnail Image */
+  .pdf-thumb-container img {
+    width: auto;            /* Allow width to be larger than container */
+    height: 100%;           /* Scale height to fit container */
+    object-fit: cover;
+    object-position: left;  /* Start by showing the left-most page */
+    transition: object-position 1.5s ease-in-out; /* Smooth scrolling speed */
+  }
+  
+  /* 3. The Hover Effect (The "Scroll") */
+  .pdf-thumb-container:hover img {
+    object-position: right; /* Pans to the right-most page on hover */
+  }
+
 /* Optional: nicer headings spacing inside cards */
 .project h2 {
   margin: 0 0 12px;
