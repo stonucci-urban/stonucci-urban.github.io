@@ -3243,7 +3243,7 @@ img.u-pull-left {
  * ## intro bg
  * -------------------------------------------------------------------- */
 .s-intro__bg {
-    height              : 20%;
+    height              : 30%;
     width               : 100%;
     background-color    : var(--color-gray-4);
     background-repeat   : no-repeat;
