@@ -3237,7 +3237,7 @@ img.u-pull-left {
     margin-top       : calc(var(--text-huge-size) / 2 * -1.2);
     margin-bottom    : var(--vspace-1_25);
     color            : white;
-	text-shadow      : 2px 2px rgb(80, 97, 97);
+	text-shadow      : 4px 4px var(--color-1-dark);
 }
 
 /* --------------------------------------------------------------------
