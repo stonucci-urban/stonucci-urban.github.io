@@ -3250,6 +3250,7 @@ img.u-pull-left {
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : 110%;
+	background-blend-mode: overlay;
     position            : relative;
 }
 
