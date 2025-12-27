@@ -3246,6 +3246,7 @@ img.u-pull-left {
     aspect-ratio        : 1/.5;
     width               : 100%;
     background-color    : var(--color-gray-4);
+	background-image    : url("intro_bg.jpg");
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : auto;
